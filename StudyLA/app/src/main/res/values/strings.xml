@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">StudyLA</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menus_soups">Suppen</string>
+    <string name="menus_main_dish">Hauptspeisen</string>
+    <string name="menus_side_dish">Beilagen</string>
+    <string name="menus_deserts">Nachspeisen</string>
+
+    <string name="event_ongoing">"Läuft bis "</string>
+    <string name="event_today">"Heute"</string>
+    <string name="event_tomorrow">"Morgen"</string>
+
+    <string name="facebook_app_id">125306974573504</string>
+
+    <string name="search">Suche</string>
+    <string name="search_hint">Räume suchen</string>
+    <string name="search_list_empty">kein Ergebnis</string>
+    <string name="settings">Einstellungen</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="about_message">&lt;b&gt;HAW-Landshut Roomfinder für Android&lt;/b&gt;&lt;br /&gt;Version $version</string>
+    <string name="pref_header_general">Allgemein</string>
+    <string name="feedback">Feedback</string>
+    <string name="eg">EG</string>
+    <string name="og1">OG1</string>
+    <string name="og2">OG2</string>
+    <string name="loading_database">Warte während die Daten geladen werden …</string>
+    <string name="pref_anonymous_data_desc">anonyme Nutzerdaten werden an den Server gesendet</string>
+    <string name="pref_anonymous_data_title">anonyme Nutzerdaten</string>
+
+    <string name="home_about">StudyLA Version 0.9 \n Unofficial HAW Landshut App</string>
+    <string name="home_logo_desc">HAW Landshut Logo</string>
+
+    <string name="button_studium">Studium</string>
+    <string name="button_mensa">Mensa</string>
+    <string name="button_vorlesungsplan">Vorlesungsplan</string>
+    <string name="button_aktuelles">Aktuelles</string>
+    <string name="button_orientierung">Room Finder</string>
+
+    <string name="loading">Loading Data</string>
+    <string name="red">  </string>
+    <string name="blue">  </string>
+
+    <integer-array name="img_id_arr">
+        <item>@drawable/default_dot</item>
+    </integer-array>
+
+</resources>

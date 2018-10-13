@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_studium"
+            android:icon="@drawable/ic_menu_studium"
+            android:title="Studium Aktuell" />
+        <item
+            android:id="@+id/nav_mensa"
+            android:icon="@drawable/ic_menu_mensa"
+            android:title="Mensa" />
+        <item
+            android:id="@+id/nav_orientierung"
+            android:icon="@drawable/ic_menu_orientierung"
+            android:title="Orientierung" />
+        <item
+            android:id="@+id/nav_transport"
+            android:icon="@drawable/ic_menu_bus"
+            android:title="Busfahrplan" />
+        <item
+            android:id="@+id/nav_vorlesungsplan"
+            android:icon="@drawable/ic_menu_vorlesungsplan"
+            android:title="Vorlesungsplan" />
+        <item
+            android:id="@+id/nav_veranstaltungen"
+            android:icon="@drawable/ic_menu_veranstaltungen"
+            android:title="Veranstaltungen" />
+    </group>
+
+    <item android:title="Funktionen">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_moodle"
+                    android:icon="@drawable/ic_menu_moodle"
+                    android:title="Moodle" />
+                <item
+                    android:id="@+id/nav_bibliothek"
+                    android:icon="@drawable/ic_menu_bibliothek"
+                    android:title="Bibliothek" />
+                <item
+                    android:id="@+id/nav_email"
+                    android:icon="@drawable/ic_menu_email"
+                    android:title="Webmail" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Allgemein">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_einstellungen"
+                    android:icon="@drawable/ic_menu_impressum"
+                    android:title="Impressum" />
+                <item
+                    android:id="@+id/nav_links"
+                    android:icon="@drawable/ic_menu_links"
+                    android:title="Links" />
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@drawable/ic_menu_feedback"
+                    android:title="Feedback" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

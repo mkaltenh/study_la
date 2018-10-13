@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Map -->
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- map will be inserted here -->
+
+    </FrameLayout>
+
+    <!-- Overlay -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:fitsSystemWindows="true">
+
+        <!-- Toolbar -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Raum suchen ..."
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    app:srcCompat="@drawable/ic_search_black_24dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Floor Buttons -->
+        <LinearLayout
+            android:id="@+id/map_floor_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/appbar"
+            android:layout_margin="12dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/background_map_button_layout"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <ImageButton
+                android:id="@+id/map_button_floor_up"
+                android:layout_width="@dimen/map_button_size"
+                android:layout_height="@dimen/map_button_size"
+                android:background="@drawable/background_map_button"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/floor_up" />
+
+            <include layout="@layout/map_button_divider" />
+
+            <include layout="@layout/map_button_divider" />
+
+            <ImageButton
+                android:id="@+id/map_button_floor_down"
+                android:layout_width="@dimen/map_button_size"
+                android:layout_height="@dimen/map_button_size"
+                android:background="@drawable/background_map_button"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/floor_down" />
+        </LinearLayout>
+
+        <!-- Details -->
+        <RelativeLayout
+            android:id="@+id/map_room_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <View
+                android:id="@+id/room_detail_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/shadow_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/room_detail_shadow"
+                android:background="@color/white_transparent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/room_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/room_detail_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/room_detail_name"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- Zoom -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/map_room_details"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_margin="@dimen/map_button_margin"
+            android:background="@drawable/background_map_button_layout"
+            android:divider="@drawable/map_button_divider"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <ImageButton
+                android:id="@+id/map_button_zoom_in"
+                android:layout_width="@dimen/map_button_size"
+                android:layout_height="@dimen/map_button_size"
+                android:background="@drawable/background_map_button"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/zoom_in" />
+
+            <include layout="@layout/map_button_divider" />
+
+            <ImageButton
+                android:id="@+id/map_button_zoom_out"
+                android:layout_width="@dimen/map_button_size"
+                android:layout_height="@dimen/map_button_size"
+                android:background="@drawable/background_map_button"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/zoom_out" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

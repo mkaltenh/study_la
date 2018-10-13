@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Impressum: \n Angaben gemäß § 5 TMG: \n Andreas Rasch \n Hauptstraße 1384127 \n Buch am Erlbach \n Kontakt: \n Email: studyla@gmx.de"/>
+
+</LinearLayout>

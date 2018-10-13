@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/link_back"
+            android:icon="@drawable/ic_submenu_back"
+            android:title="Zurück" />
+        <item
+            android:id="@+id/link_homepage"
+            android:icon="@mipmap/ic_hawlogo"
+            android:title="HAW Landshut" />
+        <item
+            android:id="@+id/link_stadtwerke"
+            android:icon="@mipmap/ic_stadtwerke"
+            android:title="Stadtwerke Landshut" />
+        <item
+            android:id="@+id/link_campusla"
+            android:icon="@drawable/link_campusla"
+            android:title="Campus Landshut" />
+        <item
+            android:id="@+id/link_wingla"
+            android:icon="@drawable/link_wingla"
+            android:title="WingLA" />
+        <item
+            android:id="@+id/link_stuv"
+            android:icon="@drawable/link_stuv"
+            android:title="StuV" />
+        <item
+            android:id="@+id/link_unicon"
+            android:icon="@drawable/link_unicon"
+            android:title="Unicon" />
+        <item
+            android:id="@+id/link_eracing"
+            android:icon="@drawable/link_eracing"
+            android:title="eRacing" />
+        <item
+            android:id="@+id/link_unicef"
+            android:icon="@drawable/link_unicef"
+            android:title="Unicef" />
+        <item
+            android:id="@+id/link_hsg"
+            android:icon="@drawable/link_hsg"
+            android:title="HSG Landshut" />
+        <item
+            android:id="@+id/link_selam"
+            android:icon="@drawable/link_selam"
+            android:title="SELAM" />
+        <item
+            android:id="@+id/link_vde"
+            android:icon="@drawable/link_vde"
+            android:title="VDE Landshut" />
+        <item
+            android:id="@+id/link_sbportal"
+            android:icon="@drawable/ic_website"
+            android:title="SB Portal"
+            />
+        <item
+            android:id="@+id/link_allgemeines"
+            android:icon="@drawable/ic_website"
+            android:title="Allgemeine Infos"/>
+    </group>
+</menu>
